@@ -1,39 +1,15 @@
 const aspectToClass = {
   "1:1": "grid-item-1-1",
   "1:2": "grid-item-1-2",
-  "1:3": "grid-item-1-3",
-  "1:4": "grid-item-1-4",
   "2:1": "grid-item-2-1",
   "2:2": "grid-item-2-2",
-  "2:3": "grid-item-2-3",
-  "2:4": "grid-item-2-4",
-  "3:1": "grid-item-3-1",
-  "3:2": "grid-item-3-2",
-  "3:3": "grid-item-3-3",
-  "3:4": "grid-item-3-4",
-  "4:1": "grid-item-4-1",
-  "4:2": "grid-item-4-2",
-  "4:3": "grid-item-4-3",
-  "4:4": "grid-item-4-4",
 };
 
 const aspectToSpan = {
   "1:1": { cols: 1, rows: 1 },
   "1:2": { cols: 1, rows: 2 },
-  "1:3": { cols: 1, rows: 3 },
-  "1:4": { cols: 1, rows: 4 },
   "2:1": { cols: 2, rows: 1 },
   "2:2": { cols: 2, rows: 2 },
-  "2:3": { cols: 2, rows: 3 },
-  "2:4": { cols: 2, rows: 4 },
-  "3:1": { cols: 3, rows: 1 },
-  "3:2": { cols: 3, rows: 2 },
-  "3:3": { cols: 3, rows: 3 },
-  "3:4": { cols: 3, rows: 4 },
-  "4:1": { cols: 4, rows: 1 },
-  "4:2": { cols: 4, rows: 2 },
-  "4:3": { cols: 4, rows: 3 },
-  "4:4": { cols: 4, rows: 4 },
 };
 
 const imageFiles = [

@@ -1,26 +1,18 @@
-/* 1. Reset & Box Sizing */
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    /* This is the critical fix for overflow. 
-       It ensures padding is calculated INSIDE the width, not added to it. */
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-/* 2. Main Grid Container */
 body {
     display: grid;
-    /* We use var(--col-count) here so it updates automatically with media queries */
-    grid-template-columns: repeat(var(--col-count), 1fr); 
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(var(--col-count), 1fr);
+    /* grid-auto-flow: dense; */
     gap: 16px;
     padding: 16px;
-    width: 100%;
-    /* overflow-x: hidden; <--- You can remove this now, the overflow is fixed! */
 }
 
-/* 3. Base Image Style */
 [class^="grid-item-"] {
     display: block;
     width: 100%;
@@ -30,66 +22,56 @@ body {
     border-radius: 48px;
 }
 
-/* 4. Aspect Ratio Calculation */
-
 :root {
     --gap: 16px;
-    --pad: 32px; /* Total horizontal padding (16px left + 16px right) */
-    
-    /* Default (Mobile): 2 columns */
     --col-count: 2;
-    
-    /* FIXED MATH: 
-       We must subtract the body padding (--pad) from the viewport width (100vw)
-       so the aspect ratio calculation matches the actual available space.
-    */
-    --cell: calc((100vw - var(--pad) - var(--gap)) / var(--col-count));
-    --gap-cell: calc(var(--gap) / var(--cell));
+    --cell: calc((100vw - (var(--gap) * (var(--col-count) + 1))) / var(--col-count));
 }
 
 @media (min-width: 700px) {
     :root {
         --col-count: 4;
-        /* (cols - 1) * gap = 3 * gap */
-        --cell: calc((100vw - var(--pad) - 3 * var(--gap)) / var(--col-count));
-        --gap-cell: calc(var(--gap) / var(--cell));
     }
 }
 
 @media (min-width: 950px) {
     :root {
         --col-count: 8;
-        /* (cols - 1) * gap = 7 * gap */
-        --cell: calc((100vw - var(--pad) - 7 * var(--gap)) / var(--col-count));
-        --gap-cell: calc(var(--gap) / var(--cell));
     }
 }
 
-/* 5. Dynamic Aspect Ratios (Unchanged logic, but now using accurate variables) */
-.grid-item-1-1 { aspect-ratio: 1 / 1; }
-.grid-item-1-2 { aspect-ratio: calc((1 + 0 * var(--gap-cell)) / (2 + 1 * var(--gap-cell))); }
-.grid-item-2-1 { aspect-ratio: calc((2 + 1 * var(--gap-cell)) / (1 + 0 * var(--gap-cell))); }
-.grid-item-2-2 { aspect-ratio: 1 / 1; }
-.grid-item-1-3 { aspect-ratio: calc((1 + 0 * var(--gap-cell)) / (3 + 2 * var(--gap-cell))); }
-.grid-item-3-1 { aspect-ratio: calc((3 + 2 * var(--gap-cell)) / (1 + 0 * var(--gap-cell))); }
-.grid-item-2-3 { aspect-ratio: calc((2 + 1 * var(--gap-cell)) / (3 + 2 * var(--gap-cell))); }
-.grid-item-3-2 { aspect-ratio: calc((3 + 2 * var(--gap-cell)) / (2 + 1 * var(--gap-cell))); }
-.grid-item-3-3 { aspect-ratio: 1 / 1; }
-.grid-item-1-4 { aspect-ratio: calc((1 + 0 * var(--gap-cell)) / (4 + 3 * var(--gap-cell))); }
-.grid-item-4-1 { aspect-ratio: calc((4 + 3 * var(--gap-cell)) / (1 + 0 * var(--gap-cell))); }
-.grid-item-2-4 { aspect-ratio: calc((2 + 1 * var(--gap-cell)) / (4 + 3 * var(--gap-cell))); }
-.grid-item-4-2 { aspect-ratio: calc((4 + 3 * var(--gap-cell)) / (2 + 1 * var(--gap-cell))); }
-.grid-item-3-4 { aspect-ratio: calc((3 + 2 * var(--gap-cell)) / (4 + 3 * var(--gap-cell))); }
-.grid-item-4-3 { aspect-ratio: calc((4 + 3 * var(--gap-cell)) / (3 + 2 * var(--gap-cell))); }
-.grid-item-4-4 { aspect-ratio: 1 / 1; }
+.grid-item-1-1 {
+    aspect-ratio: 1 / 1;
+}
 
-/* 6. Grid Spans */
-.grid-item-1-1, .grid-item-1-2, .grid-item-1-3, .grid-item-1-4 { grid-column: span 1; }
-.grid-item-2-1, .grid-item-2-2, .grid-item-2-3, .grid-item-2-4 { grid-column: span 2; }
-.grid-item-3-1, .grid-item-3-2, .grid-item-3-3, .grid-item-3-4 { grid-column: span 3; }
-.grid-item-4-1, .grid-item-4-2, .grid-item-4-3, .grid-item-4-4 { grid-column: span 4; }
+.grid-item-1-2 {
+    aspect-ratio: calc(var(--cell) / (2 * var(--cell) + var(--gap)));
+}
 
-.grid-item-1-1, .grid-item-2-1, .grid-item-3-1, .grid-item-4-1 { grid-row: span 1; }
-.grid-item-1-2, .grid-item-2-2, .grid-item-3-2, .grid-item-4-2 { grid-row: span 2; }
-.grid-item-1-3, .grid-item-2-3, .grid-item-3-3, .grid-item-4-3 { grid-row: span 3; }
-.grid-item-1-4, .grid-item-2-4, .grid-item-3-4, .grid-item-4-4 { grid-row: span 4; }
+.grid-item-2-1 {
+    aspect-ratio: calc((2 * var(--cell) + var(--gap)) / var(--cell));
+}
+
+.grid-item-2-2 {
+    aspect-ratio: 1 / 1;
+}
+
+.grid-item-1-1,
+.grid-item-1-2 {
+    grid-column: span 1;
+}
+
+.grid-item-2-1,
+.grid-item-2-2 {
+    grid-column: span 2;
+}
+
+.grid-item-1-1,
+.grid-item-2-1 {
+    grid-row: span 1;
+}
+
+.grid-item-1-2,
+.grid-item-2-2 {
+    grid-row: span 2;
+}
