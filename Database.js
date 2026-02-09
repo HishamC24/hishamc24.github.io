@@ -1,0 +1,30 @@
+[
+    {
+      "primaryImage": {
+        "src": "src",
+        "aspectRatio": "1:1",
+        "description": "description",
+        "date": {
+          "type": "range",
+          "start": "2022-01-01",
+          "end": "2022-12-31"
+        }
+      },
+      "secondaryImages": [
+        {
+          "src": "src",
+          "aspectRatio": "16:9",
+          "description": "description"
+        },
+        {
+          "src": "src",
+          "description": "description",
+          "date": {
+            "type": "single",
+            "value": "2022-05-10"
+          }
+        }
+      ]
+    }
+]
+  
