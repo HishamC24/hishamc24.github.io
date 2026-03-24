@@ -279,5 +279,19 @@
         "end": null
       }
     }
+  },
+  {
+    "primaryImage": {
+      "src": "Nintendo Switch 2 type 3.png",
+      "aspectRatio": "1:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
   }
 ]
