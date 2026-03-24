@@ -1,19 +1,23 @@
 import json
 import random
 
+
 def read_json(filename):
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 def write_json(filename, data):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
 
 def get_aspect_ratio(item):
     try:
         return item["primaryImage"]["aspectRatio"]
     except Exception:
         return None
+
 
 def group_by_aspect_ratio(items):
     aspect_dict = {}
@@ -23,6 +27,7 @@ def group_by_aspect_ratio(items):
             aspect_dict[aspect] = []
         aspect_dict[aspect].append(item)
     return aspect_dict
+
 
 def shuffle_no_repeats(items):
     """
@@ -44,8 +49,11 @@ def shuffle_no_repeats(items):
     total_items = len(items)
 
     for _ in range(total_items):
-        available_aspects = [aspect for aspect in aspect_keys
-                             if aspect_counts[aspect] > 0 and aspect != prev_aspect]
+        available_aspects = [
+            aspect
+            for aspect in aspect_keys
+            if aspect_counts[aspect] > 0 and aspect != prev_aspect
+        ]
         if not available_aspects:
             # fail out
             return []
@@ -56,6 +64,7 @@ def shuffle_no_repeats(items):
         prev_aspect = aspect_choice
 
     return result
+
 
 def best_effort_shuffle(items):
     """
@@ -69,6 +78,7 @@ def best_effort_shuffle(items):
         random.shuffle(v)
 
     from collections import Counter
+
     aspect_counts = {k: len(v) for k, v in aspect_dict.items()}
     total_items = len(items)
 
@@ -76,10 +86,16 @@ def best_effort_shuffle(items):
     prev_aspect = None
 
     for _ in range(total_items):
-        available_aspects = [aspect for aspect in aspect_keys if aspect_counts[aspect] > 0 and aspect != prev_aspect]
+        available_aspects = [
+            aspect
+            for aspect in aspect_keys
+            if aspect_counts[aspect] > 0 and aspect != prev_aspect
+        ]
         if not available_aspects:
             # must pick a repeat now; pick the aspect with the most left
-            available_aspects = [aspect for aspect in aspect_keys if aspect_counts[aspect] > 0]
+            available_aspects = [
+                aspect for aspect in aspect_keys if aspect_counts[aspect] > 0
+            ]
         # Pick the aspect with largest remaining (helps interleave long runs)
         max_count = max([aspect_counts[a] for a in available_aspects])
         top_aspects = [a for a in available_aspects if aspect_counts[a] == max_count]
@@ -90,6 +106,7 @@ def best_effort_shuffle(items):
         prev_aspect = aspect_choice
 
     return result
+
 
 def smart_shuffle(items, max_attempts=1000):
     """Try shuffling up to max_attempts to produce a valid arrangement.
@@ -108,6 +125,7 @@ def smart_shuffle(items, max_attempts=1000):
     # If not possible, fallback to best-effort
     return best_effort_shuffle(items)
 
+
 def main():
     input_filename = "Database_PreShuffle.json"
     output_filename = "Database.json"
@@ -116,6 +134,7 @@ def main():
     shuffled_items = smart_shuffle(items)
     write_json(output_filename, shuffled_items)
     print(f"Database shuffled and written to {output_filename}")
+
 
 if __name__ == "__main__":
     main()
