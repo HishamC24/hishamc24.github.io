@@ -11,10 +11,19 @@ body {
     grid-auto-flow: dense;
     gap: 16px;
     padding: 16px;
+    background: #fff;
 }
 
 html {
     scrollbar-width: none;
+    background: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    body,
+    html {
+        background: #000;
+    }
 }
 
 [class^="grid-item-"] {
