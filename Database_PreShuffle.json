@@ -293,5 +293,19 @@
         "end": null
       }
     }
+  },
+  {
+    "primaryImage": {
+      "src": "Camera Settings 3.29.26.png",
+      "aspectRatio": "1:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
   }
 ]

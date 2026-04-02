@@ -1,0 +1,236 @@
+svg,
+p {
+    color: #000000;
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* TODO: make this support dark mode */
+.glassy {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 32px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.glassy:active {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* NAV BAR */
+
+nav {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    gap: 8px;
+    padding: 0 32px 32px 32px;
+    width: calc(100vw - 64px);
+    z-index: 1;
+}
+
+/* TAB BAR BASE */
+.tab-bar {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    transition: width 0.25s ease-in-out, height 0.25s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+/* TAB ITEMS */
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32px;
+}
+
+.tab-item>p {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.tab-item>p,
+.tab-item>svg {
+    z-index: 3;
+    transition: color 0.25s ease-in-out;
+}
+
+/* SELECTED ITEM (highlight sizing rules later) */
+.tab-item#selected {
+    position: relative;
+}
+    
+.tab-item#selected>* {
+    color: #00aaff;
+    stroke: #00aaff;
+}
+
+/* BASE highlight shape; width updated by layout rules */
+.tab-item#selected::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* nah, im just going crazy, mabye an optical balance issue idfk */
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* NAV WITH ACTION BUTTON */
+
+/* ---- 4 ITEMS ---- */
+nav:has(.action-btn) .tab-bar:has(.tab-item:nth-child(4)) {
+    flex: 1;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+
+/* Highlight size for padding 24 */
+nav:has(.action-btn) .tab-bar:has(.tab-item:nth-child(4)) .tab-item#selected::before {
+    width: 72px;
+}
+
+/* ---- 3 ITEMS ---- */
+nav:has(.action-btn) .tab-bar:has(.tab-item:nth-child(3)):not(:has(.tab-item:nth-child(4))) {
+    flex: 1;
+    padding: 0 32px;
+    justify-content: space-between;
+}
+
+/* Highlight size for padding 32 */
+nav:has(.action-btn) .tab-bar:has(.tab-item:nth-child(3)):not(:has(.tab-item:nth-child(4))) .tab-item#selected::before {
+    width: 88px;
+}
+
+/* ---- 2 ITEMS ---- */
+nav:has(.action-btn) .tab-bar:has(.tab-item:nth-child(2)):not(:has(.tab-item:nth-child(3))) {
+    flex: 0;
+    padding: 0 32px;
+    gap: 48px;
+}
+
+/* Highlight = 88px because padding = 32 */
+nav:has(.action-btn) .tab-bar:has(.tab-item:nth-child(2)):not(:has(.tab-item:nth-child(3))) .tab-item#selected::before {
+    width: 88px;
+}
+
+/* NAV WITHOUT ACTION BUTTON */
+
+/* ---- 5 ITEMS ---- */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(5)) {
+    flex: 1;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+
+/* Highlight = 72 for padding 24 */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(5)) .tab-item#selected::before {
+    width: 72px;
+}
+
+/* ---- 4 ITEMS ---- */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(4)):not(:has(.tab-item:nth-child(5))) {
+    flex: 1;
+    padding: 0 32px;
+    justify-content: space-between;
+}
+
+/* Highlight = 88 for padding 32 */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(4)):not(:has(.tab-item:nth-child(5))) .tab-item#selected::before {
+    width: 88px;
+}
+
+/* ---- 3 ITEMS ---- */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(3)):not(:has(.tab-item:nth-child(4))) {
+    flex: 0;
+    padding: 0 32px;
+    gap: 48px;
+}
+
+/* Highlight = 88 */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(3)):not(:has(.tab-item:nth-child(4))) .tab-item#selected::before {
+    width: 88px;
+}
+
+/* ---- 2 ITEMS ---- */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(2)):not(:has(.tab-item:nth-child(3))) {
+    flex: 0;
+    padding: 0 32px;
+    gap: 48px;
+}
+
+/* Highlight = 88 */
+nav:not(:has(.action-btn)) .tab-bar:has(.tab-item:nth-child(2)):not(:has(.tab-item:nth-child(3))) .tab-item#selected::before {
+    width: 88px;
+}
+
+.action-btn {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-left: auto;
+    transition: width 0.25s ease-in-out, height 0.25s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+nav.compact .tab-item:not(#selected),
+nav.compact .tab-item#selected::before,
+nav.compact .tab-item p {
+    display: none;
+    content: none;
+}
+
+nav.compact .tab-bar {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    margin: 0 auto 0 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+    flex: none !important;
+}
+
+nav.compact .action-btn {
+    width: 48px !important;
+    height: 48px !important;
+    margin: 0 !important;
+}
+
+.floating-rect {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    svg,
+    p {
+        color: #ffffff;
+    }
+
+    .glassy {
+        background-color: rgba(25, 25, 25, 0.5);
+    }
+
+    .glassy:active {
+        background-color: rgba(25, 25, 25, 0.75);
+    }
+
+    .tab-item#selected::before {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .floating-rect {
+        background: rgba(25, 25, 25, 0.25);
+    }
+}

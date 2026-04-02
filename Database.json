@@ -1,36 +1,21 @@
 [
   {
     "primaryImage": {
-      "src": "Songify Image 3.23.26.png",
-      "aspectRatio": "2:2",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "StandBy Github Repo Image 3.19.26.png",
+      "src": "6.9.24.png",
       "aspectRatio": "2:1",
-      "description": "",
+      "description": "Well, the event is tomorrow! Based on what gets announced, ill make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
       "autoBackground": false,
       "object-fit": "cover",
       "date": {
-        "type": "range",
-        "start": null,
-        "end": null
+        "type": "single",
+        "value": "06-09-2024"
       }
     }
   },
   {
     "primaryImage": {
-      "src": "UniCalc Image 3.23.26.png",
-      "aspectRatio": "2:2",
+      "src": "TimeBreak Image 3.23.26.png",
+      "aspectRatio": "1:2",
       "description": "",
       "autoBackground": false,
       "object-fit": "cover",
@@ -70,42 +55,83 @@
   },
   {
     "primaryImage": {
-      "src": "NewGenUI Github Repo Image 3.19.26.png",
+      "src": "6.12.24.png",
       "aspectRatio": "2:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "TimeBreak Image 3.23.26.png",
-      "aspectRatio": "1:2",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "6.9.24.png",
-      "aspectRatio": "2:1",
-      "description": "Well, the event is tomorrow! Based on what gets announced, ill make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
-      "autoBackground": false,
+      "description": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac, how fitting. Anyway, it took some time to recreate part of the new control center!",
+      "autoBackground": true,
       "object-fit": "cover",
       "date": {
         "type": "single",
-        "value": "06-09-2024"
+        "value": "06-12-2024"
+      }
+    },
+    "secondaryImages": [
+      {
+        "src": "6.11.24.png",
+        "aspectRatio": "2:1",
+        "description": "Well, WWDC24 was yesterday and they introduced a lot of features, including many features that already existed on android, as well as a ton of useful AI features (called apple intelligence, of course, because why would they NOT rename it?) and I wanted to recreate the control center. I am pretty busy but I will try and recreate it as well as I can!",
+        "autoBackground": false,
+        "object-fit": "cover",
+        "date": {
+          "type": "single",
+          "value": "06-11-2024"
+        }
+      }
+    ]
+  },
+  {
+    "primaryImage": {
+      "src": "Songify Image 3.23.26.png",
+      "aspectRatio": "2:2",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "Nintendo Switch 2 type 3.png",
+      "aspectRatio": "1:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "UniCalc Image 3.23.26.png",
+      "aspectRatio": "2:2",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "FrameSeeker Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1",
+      "description": "A PWA that allows you to view and save frames of a video.",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
       }
     }
   },
@@ -137,87 +163,6 @@
   },
   {
     "primaryImage": {
-      "src": "5.30.24.png",
-      "aspectRatio": "1:1",
-      "description": "Decided to start building my portfolio, so ill make a mockup every day until I get bored I guess lol",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "05-30-2024"
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "5.31.24.png",
-      "aspectRatio": "2:1",
-      "description": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign!",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "05-31-2024"
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Nintendo Switch 2 type 3.png",
-      "aspectRatio": "1:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "FrameSeeker Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "A PWA that allows you to view and save frames of a video.",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Concept Windows UI.png",
-      "aspectRatio": "1:1",
-      "description": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "09-18-2024"
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Colorizer Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
       "src": "6.5.24.png",
       "aspectRatio": "1:1",
       "description": "A video editing platform, could use some work but its a good base to start on. Mabye I'll revisit this in the future and improve it. It looks pretty bare lol",
@@ -239,6 +184,88 @@
       "date": {
         "type": "single",
         "value": "06-13-2024"
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "Concept Windows UI.png",
+      "aspectRatio": "1:1",
+      "description": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "single",
+        "value": "09-18-2024"
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "StandBy Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "Camera Settings 3.29.26.png",
+      "aspectRatio": "1:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "NewGenUI Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "5.30.24.png",
+      "aspectRatio": "1:1",
+      "description": "Decided to start building my portfolio, so ill make a mockup every day until I get bored I guess lol",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "single",
+        "value": "05-30-2024"
+      }
+    }
+  },
+  {
+    "primaryImage": {
+      "src": "Colorizer Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1",
+      "description": "",
+      "autoBackground": false,
+      "object-fit": "cover",
+      "date": {
+        "type": "range",
+        "start": null,
+        "end": null
       }
     }
   },
@@ -270,28 +297,15 @@
   },
   {
     "primaryImage": {
-      "src": "6.12.24.png",
+      "src": "5.31.24.png",
       "aspectRatio": "2:1",
-      "description": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac, how fitting. Anyway, it took some time to recreate part of the new control center!",
-      "autoBackground": true,
+      "description": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign!",
+      "autoBackground": false,
       "object-fit": "cover",
       "date": {
         "type": "single",
-        "value": "06-12-2024"
+        "value": "05-31-2024"
       }
-    },
-    "secondaryImages": [
-      {
-        "src": "6.11.24.png",
-        "aspectRatio": "2:1",
-        "description": "Well, WWDC24 was yesterday and they introduced a lot of features, including many features that already existed on android, as well as a ton of useful AI features (called apple intelligence, of course, because why would they NOT rename it?) and I wanted to recreate the control center. I am pretty busy but I will try and recreate it as well as I can!",
-        "autoBackground": false,
-        "object-fit": "cover",
-        "date": {
-          "type": "single",
-          "value": "06-11-2024"
-        }
-      }
-    ]
+    }
   }
 ]

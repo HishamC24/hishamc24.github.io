@@ -1,29 +1,70 @@
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("Fonts/SF-Pro-Display-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("Fonts/SF-Pro-Display-Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("Fonts/SF-Pro-Display-Bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF Pro Mono";
+    src: url("Fonts/SFMono-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Pro Mono";
+    src: url("Fonts/SFMono-Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SF Pro Mono";
+    src: url("Fonts/SFMono-Bold.otf");
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
+    color: #000000;
     font-size: 16px;
-    box-sizing: border-box;
+    font-family: "SF Pro Display";
+    -webkit-tap-highlight-color: transparent;
 }
 
-body {
+#portfolio-grid {
     display: grid;
     grid-template-columns: repeat(var(--col-count), 1fr);
     grid-auto-flow: dense;
     gap: 16px;
     padding: 16px;
-    background: #fff;
 }
 
 html {
     scrollbar-width: none;
-    background: #fff;
+    background: #F2F2F2;
 }
 
-@media (prefers-color-scheme: dark) {
-    body,
-    html {
-        background: #000;
-    }
+.title {
+    /* margin: 32px; */
+    padding: 128px 0;
+}
+
+.title>h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
 }
 
 [class^="grid-item-"] {
@@ -31,7 +72,7 @@ html {
     width: 100%;
     height: 100%;
     /* object-fit: cover; */
-    background: #e0e0e0;
+    background: #ffffff;
     border-radius: 48px;
 }
 
@@ -91,4 +132,19 @@ html {
 .grid-item-1-2,
 .grid-item-2-2 {
     grid-row: span 2;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: #ffffff;
+    }
+
+    html {
+        background: #000000;
+    }
+
+    [class^="grid-item-"] {
+        background: #1A1A1A;
+    }
+
 }

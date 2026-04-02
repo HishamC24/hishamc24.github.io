@@ -15,7 +15,7 @@ const aspectToSpan = {
 fetch("Database.json")
   .then((response) => response.json())
   .then((data) => {
-    const body = document.body;
+    const section = document.getElementById("portfolio-grid");
     data.forEach((item) => {
       const primary = item.primaryImage;
       if (!primary) return;
@@ -29,9 +29,14 @@ fetch("Database.json")
       } else {
         img.style.objectFit = "cover";
       }
-      body.appendChild(img);
+      section.appendChild(img);
     });
   })
   .catch((err) => {
     console.error("Failed to load images from Database.json", err);
   });
+
+
+document.getElementById("action-btn").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
