@@ -67,6 +67,21 @@ html {
     font-size: 48px;
 }
 
+.section {
+    margin: 16px;
+    background-color: #1A1A1A;
+    border-radius: 64px;
+    padding: 32px;
+}
+
+.section>h1 {
+    font-size: 24px;
+}
+
+.section>p {
+    margin-top: 16px;
+}
+
 [class^="grid-item-"] {
     display: block;
     width: 100%;
