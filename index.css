@@ -70,7 +70,7 @@ html {
 .section {
   margin: 16px;
   background-color: #ffffff;
-  border-radius: 64px;
+  border-radius: 48px;
   padding: 32px;
 }
 
@@ -157,7 +157,7 @@ html {
 #introduction>* {
   flex: 1 1 0;
   width: 50%;
-  border-radius: 32px;
+  border-radius: 16px;
 }
 
 #about-text {
