@@ -151,49 +151,39 @@ html {
 
 #introduction {
   display: flex;
-  align-items: center;
   gap: 32px;
 }
 
-#introduction video {
-  object-fit: cover;
+#introduction>* {
+  flex: 1 1 0;
+  width: 50%;
   border-radius: 32px;
-  width: 100%;
-  height: auto;
-  flex: none;
-  display: block;
-}
-
-#introduction>*:not(video) {
-  flex: 1;
 }
 
 #about-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 32px;
+  justify-content: center;
 }
 
 #about-text h1 {
-  font-size: 32px;
+  font-size: 2rem;
+  margin: 0;
 }
 
-/* make this cleaner, why seperate it lmao, also clean this up pls ty*/
-@media (max-width: 699px) {
+@media (max-width: 700px) {
   #introduction {
     flex-direction: column;
-    gap: 16px;
     align-items: stretch;
+  }
+
+  #introduction > * {
+    width: 100%;
   }
 
   #about-text {
     gap: 16px;
-  }
-
-  #introduction video {
-    /* max-width: 100%;
-    width: 100%; */
   }
 }
 
