@@ -54,6 +54,8 @@
 html {
   scrollbar-width: none;
   background: #f2f2f2;
+  margin-bottom: 128px;
+  padding-top: env(safe-area-inset-top);
 }
 
 .title {
