@@ -754,12 +754,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-let lastShownSection = 0; // 0 = t1, 1 = t2
+let lastShownSection = 0; // 0 = Portfolio, 1 = About
 
 // Show/hide relevant section based on #selected tab
 function updateSectionVisibility() {
-    const section1 = document.getElementById("t1");
-    const section2 = document.getElementById("t2");
+    const section1 = document.getElementById("Portfolio");
+    const section2 = document.getElementById("About");
     const allTabs = Array.from(document.querySelectorAll(".tab-bar .tab-item"));
     const selectedTab = document.querySelector(".tab-bar .tab-item#selected");
     let selectedIdx = -1;

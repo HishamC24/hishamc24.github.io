@@ -189,16 +189,13 @@ html {
   margin: 17%;
   opacity: 0.9;
   mix-blend-mode: luminosity;
+  /* lag on some mobile devices (MY PHONE NOOOOO 😭😭) */
 }
 
 #HandwrittenName path {
   color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  #name {
-    background-image: url('https://www.iclarified.com/images/news/97556/465560/465560.jpg');
-  }
+  will-change: stroke-dashoffset;
+  transform: translateZ(0);
 }
 
 @media (max-width: 700px) {
@@ -216,9 +213,6 @@ html {
   }
 }
 
-
-
-
 @media (prefers-color-scheme: dark) {
   * {
     color: #ffffff;
@@ -234,5 +228,9 @@ html {
 
   .section {
     background-color: #1a1a1a;
+  }
+
+  #name {
+    background-image: url('https://www.iclarified.com/images/news/97556/465560/465560.jpg');
   }
 }

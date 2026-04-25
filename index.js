@@ -40,20 +40,18 @@ fetch("Database.json")
       } else {
         img.style.objectFit = "cover";
       }
-      // Set up fade-in effect (but only trigger when in viewport)
       img.style.opacity = "0";
       img.style.transition = "opacity 1s";
       section.appendChild(img);
 
-      // Use IntersectionObserver to fade in when visible
       observer.observe(img);
 
-      // If the image is cached, it may be instantly visible,
-      // So if already in viewport at append, force check
       if (img.complete) {
-        // This will be handled soon by IntersectionObserver. If you want instant check:
         setTimeout(() => {
-          if (img.getBoundingClientRect().top < window.innerHeight && img.getBoundingClientRect().bottom > 0) {
+          if (
+            img.getBoundingClientRect().top < window.innerHeight &&
+            img.getBoundingClientRect().bottom > 0
+          ) {
             img.style.opacity = "1";
             observer.unobserve(img);
           }
@@ -67,6 +65,55 @@ fetch("Database.json")
 
 document.getElementById("action-btn").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+function switchTab(tab) {
+  const tabBar = document.querySelector('.tab-bar');
+  const tabItems = tabBar.querySelectorAll('.tab-item');
+  const sections = {
+    Portfolio: document.getElementById("Portfolio"),
+    About: document.getElementById("About"),
+  };
+
+  tabItems.forEach(el => el.id = "");
+  Object.values(sections).forEach(section => section.style.display = "none");
+
+  if (tab === "Portfolio") {
+    tabItems[0].id = "selected";
+    sections.Portfolio.style.display = "";
+    sections.About.style.display = "none";
+    window.location.hash = "#Portfolio";
+  } else if (tab === "About") {
+    tabItems[1].id = "selected";
+    sections.About.style.display = "";
+    sections.Portfolio.style.display = "none";
+    window.location.hash = "#About";
+  }
+}
+
+const tabBar = document.querySelector('.tab-bar');
+if (tabBar) {
+  const tabItems = tabBar.querySelectorAll('.tab-item');
+  if (tabItems[0] && tabItems[1]) {
+    tabItems[0].addEventListener("click", () => switchTab("Portfolio"));
+    tabItems[1].addEventListener("click", () => switchTab("About"));
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.location.hash === "#About") {
+    switchTab("About");
+  } else {
+    switchTab("Portfolio");
+  }
+});
+
+window.addEventListener("hashchange", () => {
+  if (window.location.hash === "#About") {
+    switchTab("About");
+  } else {
+    switchTab("Portfolio");
+  }
 });
 
 new Vivus('HandwrittenName', {
