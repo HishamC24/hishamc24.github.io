@@ -63,42 +63,55 @@ fetch("Database.json")
     console.error("Failed to load images from Database.json", err);
   });
 
-document.getElementById("action-btn").addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+const actionBtns = document.querySelectorAll(".action-btn");
+actionBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 function switchTab(tab) {
-  const tabBar = document.querySelector('.tab-bar');
-  const tabItems = tabBar.querySelectorAll('.tab-item');
+  const allTabItems = document.querySelectorAll('nav .tab-item');
   const sections = {
     Portfolio: document.getElementById("Portfolio"),
     About: document.getElementById("About"),
   };
 
-  tabItems.forEach(el => el.id = "");
-  Object.values(sections).forEach(section => section.style.display = "none");
+  Object.values(sections).forEach(section => {
+    if (section) section.style.display = "none";
+  });
+
+  allTabItems.forEach(el => el.removeAttribute("id"));
 
   if (tab === "Portfolio") {
-    tabItems[0].id = "selected";
-    sections.Portfolio.style.display = "";
-    sections.About.style.display = "none";
+    if (sections.Portfolio) sections.Portfolio.style.display = "";
     window.location.hash = "#Portfolio";
+
+    allTabItems.forEach(item => {
+      if (item.querySelector('p') && item.querySelector('p').innerText.trim() === "Portfolio") {
+        item.id = "selected";
+      }
+    });
   } else if (tab === "About") {
-    tabItems[1].id = "selected";
-    sections.About.style.display = "";
-    sections.Portfolio.style.display = "none";
+    if (sections.About) sections.About.style.display = "";
     window.location.hash = "#About";
+
+    allTabItems.forEach(item => {
+      if (item.querySelector('p') && item.querySelector('p').innerText.trim() === "About") {
+        item.id = "selected";
+      }
+    });
   }
 }
 
-const tabBar = document.querySelector('.tab-bar');
-if (tabBar) {
-  const tabItems = tabBar.querySelectorAll('.tab-item');
-  if (tabItems[0] && tabItems[1]) {
-    tabItems[0].addEventListener("click", () => switchTab("Portfolio"));
-    tabItems[1].addEventListener("click", () => switchTab("About"));
-  }
-}
+document.querySelectorAll('nav .tab-item').forEach(item => {
+  item.addEventListener("click", function () {
+    const label = this.querySelector('p');
+    if (label) {
+      switchTab(label.innerText.trim());
+    }
+  });
+});
 
 window.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash === "#About") {
