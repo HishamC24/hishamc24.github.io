@@ -247,6 +247,12 @@ nav.large>.tab-bar:has(> svg:first-child:not(.removed):not(:only-child)):has(> s
     margin-right: 20px;
 }
 
+nav.large>.tab-bar>.tab-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 28px;
+    cursor: pointer;
+}
+
 @media (min-width: 700px) {
     nav.small {
         display: none;
