@@ -68,3 +68,20 @@ fetch("Database.json")
 document.getElementById("action-btn").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+new Vivus('HandwrittenName', {
+  type: 'oneByOne',
+  duration: 200,
+  animTimingFunction: Vivus.EASE,
+  start: 'autostart'
+}, function (myVivus) {
+  setTimeout(function () {
+    if (myVivus.getStatus() === 'end') {
+      setTimeout(function () {
+        myVivus.play(-1);
+      }, 1000);
+    } else {
+      myVivus.play(1);
+    }
+  }, 200);
+});

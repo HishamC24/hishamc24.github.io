@@ -174,13 +174,40 @@ html {
   margin: 0;
 }
 
+#name {
+  background-image: url('https://www.iclarified.com/images/news/97556/465557/465557.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+#HandwrittenName {
+  width: auto;
+  height: auto;
+  margin: 17%;
+  opacity: 0.9;
+  mix-blend-mode: luminosity;
+}
+
+#HandwrittenName path {
+  color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  #name {
+    background-image: url('https://www.iclarified.com/images/news/97556/465560/465560.jpg');
+  }
+}
+
 @media (max-width: 700px) {
   #introduction {
     flex-direction: column;
     align-items: stretch;
   }
 
-  #introduction > * {
+  #introduction>* {
     width: 100%;
   }
 
