@@ -199,18 +199,20 @@ html {
 }
 
 #HandwrittenName {
-  width: auto;
-  height: auto;
-  margin: 17%;
-  opacity: 0.9;
-  mix-blend-mode: luminosity;
-  /* lag on some mobile devices (MY PHONE NOOOOO 😭😭) */
+    width: 100%;
+    height: auto;
+    margin: 17%;
+    opacity: 0.9;
+    mix-blend-mode: luminosity;
+    transform: translateZ(0);
+    /* lag on some mobile devices (MY PHONE NOOOOO 😭😭) */
+
 }
 
 #HandwrittenName path {
-  color: #ffffff;
-  will-change: stroke-dashoffset;
-  transform: translateZ(0);
+    stroke: #ffffff;
+    will-change: stroke-dashoffset;
+    transform: translateZ(0);
 }
 
 @media (max-width: 700px) {
