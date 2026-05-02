@@ -34,6 +34,10 @@
     font-weight: 700;
 }
 
+:root {
+    --MNMLUI-ACCENT: #00aaff !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -84,20 +88,20 @@ html {
     font-size: 48px;
 }
 
-.section {
+/* .section {
     margin: 16px;
     background-color: #ffffff;
     border-radius: 48px;
     padding: 32px;
-}
+} */
 
-.section>h1 {
+/* .section>h1 {
     font-size: 24px;
-}
+} */
 
-.section>p {
+/* .section>p {
     margin-top: 16px;
-}
+} */
 
 [class^="grid-item-"] {
     display: block;
@@ -175,6 +179,7 @@ html {
 #introduction {
     display: flex;
     gap: 32px;
+    padding: 32px;
 }
 
 #introduction>* {
@@ -219,6 +224,10 @@ html {
     stroke: #ffffff;
     will-change: stroke-dashoffset;
     transform: translateZ(0);
+}
+
+#Resume .card {
+    padding: 32px;
 }
 
 #Resume p {
@@ -312,9 +321,9 @@ html {
         background: #1a1a1a;
     }
 
-    .section {
+    /* .section {
         background-color: #1a1a1a;
-    }
+    } */
 
     #name {
         background-image: url('https://www.iclarified.com/images/news/97556/465560/465560.jpg');
