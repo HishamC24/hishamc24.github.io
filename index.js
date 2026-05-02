@@ -70,38 +70,32 @@ actionBtns.forEach(btn => {
   });
 });
 
-function switchTab(tab) {
+function switchTab(tabName) {
   const allTabItems = document.querySelectorAll('nav .tab-item');
-  const sections = {
-    Portfolio: document.getElementById("Portfolio"),
-    About: document.getElementById("About"),
-  };
+  const validTabs = Array.from(allTabItems).map(item => {
+    const p = item.querySelector('p');
+    return p ? p.innerText.trim() : null;
+  }).filter(Boolean);
 
-  Object.values(sections).forEach(section => {
+  validTabs.forEach(tab => {
+    const section = document.getElementById(tab);
     if (section) section.style.display = "none";
   });
 
   allTabItems.forEach(el => el.removeAttribute("id"));
 
-  if (tab === "Portfolio") {
-    if (sections.Portfolio) sections.Portfolio.style.display = "";
-    window.location.hash = "#Portfolio";
-
-    allTabItems.forEach(item => {
-      if (item.querySelector('p') && item.querySelector('p').innerText.trim() === "Portfolio") {
-        item.id = "selected";
-      }
-    });
-  } else if (tab === "About") {
-    if (sections.About) sections.About.style.display = "";
-    window.location.hash = "#About";
-
-    allTabItems.forEach(item => {
-      if (item.querySelector('p') && item.querySelector('p').innerText.trim() === "About") {
-        item.id = "selected";
-      }
-    });
+  const targetSection = document.getElementById(tabName);
+  if (targetSection) {
+    targetSection.style.display = "";
   }
+  window.location.hash = `#${tabName}`;
+
+  allTabItems.forEach(item => {
+    const p = item.querySelector('p');
+    if (p && p.innerText.trim() === tabName) {
+      item.id = "selected";
+    }
+  });
 }
 
 document.querySelectorAll('nav .tab-item').forEach(item => {
@@ -113,21 +107,19 @@ document.querySelectorAll('nav .tab-item').forEach(item => {
   });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.hash === "#About") {
-    switchTab("About");
-  } else {
-    switchTab("Portfolio");
-  }
-});
+function handleHashChange() {
+  const hash = window.location.hash.substring(1);
+  const targetSection = document.getElementById(hash);
 
-window.addEventListener("hashchange", () => {
-  if (window.location.hash === "#About") {
-    switchTab("About");
+  if (hash && targetSection) {
+    switchTab(hash);
   } else {
     switchTab("Portfolio");
   }
-});
+}
+
+window.addEventListener("DOMContentLoaded", handleHashChange);
+window.addEventListener("hashchange", handleHashChange);
 
 new Vivus('HandwrittenName', {
   type: 'oneByOne',

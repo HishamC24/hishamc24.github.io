@@ -3,12 +3,6 @@ nav svg {
     height: 32px;
 }
 
-@media (prefers-color-scheme: dark) {
-    nav svg {
-        color: #ffffff;
-    }
-}
-
 nav,
 nav * {
     user-select: none;
@@ -45,6 +39,7 @@ nav.small>.tab-bar {
     /* max-width: 304px; */
     /* at 475px viewport max width is 339px (-16 for padding), this was the calculated width, idk at what point the iPad does it but ok*/
     /* nvm, im just gonna cap each tab bar item to 86px, so 86*4-8*3-(16) */
+    /* update, 112 instead to match apple's 106 (weird number, so i rounded to 64+48) */
 }
 
 nav.small>.tab-bar>.tab-item {
@@ -54,8 +49,8 @@ nav.small>.tab-bar>.tab-item {
     flex: 1 1 0%;
     margin-left: -4px;
     margin-right: -4px;
-    width: 86px;
-    max-width: 86px;
+    width: 112px;
+    max-width: 112px;
     min-width: 0;
 }
 
@@ -71,7 +66,7 @@ nav.small>.tab-bar>.tab-item#selected {
 
 nav.small>.tab-bar>.tab-item#selected>svg {
     color: #00aaff;
-    stroke: #00aaff
+    stroke: #00aaff;
 }
 
 nav.small>.tab-bar>.tab-item#selected>p {
@@ -92,9 +87,10 @@ nav.small>.tab-bar>.tab-item#selected::before {
     z-index: 2;
 }
 
-nav.small>.player {
+nav.small>.accessory-bar {
     order: -1;
     width: calc(100vw - 64px);
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,33 +98,6 @@ nav.small>.player {
     gap: 8px;
 }
 
-nav.small>.player>img {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    margin: 0px;
-}
-
-nav.small>.player>.details {
-    flex: 1 1 0%;
-    min-width: 0;
-    height: 32px;
-    border-radius: 8px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-nav.small>.player>.details>.title {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-nav.small>.player>.details>.artist {
-    font-size: 12px;
-}
 
 nav.small>.action-btn {
     width: 64px;
@@ -164,7 +133,7 @@ nav.small.compact>.tab-bar>.tab-item#selected::before {
     display: none;
 }
 
-nav.small.compact>.player {
+nav.small.compact>.accessory-bar {
     order: 0;
     width: auto;
     flex: 1 1 0%;
@@ -251,6 +220,24 @@ nav.large>.tab-bar>.tab-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 28px;
     cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    nav svg {
+        color: #ffffff;
+    }
+
+    nav.small>.tab-bar>.tab-item#selected::before {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    nav.large>.tab-bar>.tab-item#selected::before {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    nav.large>.tab-bar>.tab-item:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
 }
 
 @media (min-width: 700px) {
