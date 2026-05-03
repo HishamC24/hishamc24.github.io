@@ -39,34 +39,15 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    font-size: 16px;
     font-family: "SF Pro Display";
-    -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    background-color: #F2F2F2;
     margin-bottom: 128px;
-    padding-top: env(safe-area-inset-top);
 }
 
 html {
     scrollbar-width: none;
-}
-
-.glassy {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.10);
-    backdrop-filter: blur(2px);
-    border-radius: 32px;
-    transition: background-color 0.5s ease-in-out;
-}
-
-.glassy:active {
-    background-color: rgba(255, 255, 255, 0.75);
 }
 
 #portfolio-grid {
