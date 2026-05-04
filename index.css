@@ -34,10 +34,6 @@
     font-weight: 700;
 }
 
-:root {
-    --MNMLUI-ACCENT: #00aaff !important;
-}
-
 * {
     font-family: "SF Pro Display";
 }
@@ -86,6 +82,7 @@ a {
     --gap: 16px;
     --col-count: 2;
     --cell: calc((100vw - (var(--gap) * (var(--col-count) + 1))) / var(--col-count));
+    --MNMLUI-ACCENT: #00aaff !important;
 }
 
 @media (min-width: 700px) {
