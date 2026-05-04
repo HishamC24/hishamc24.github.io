@@ -50,6 +50,10 @@ html {
     scrollbar-width: none;
 }
 
+a {
+    display: contents;
+}
+
 #portfolio-grid {
     display: grid;
     grid-template-columns: repeat(var(--col-count), 1fr);
@@ -68,21 +72,6 @@ html {
     justify-content: center;
     font-size: 48px;
 }
-
-/* .section {
-    margin: 16px;
-    background-color: #ffffff;
-    border-radius: 48px;
-    padding: 32px;
-} */
-
-/* .section>h1 {
-    font-size: 24px;
-} */
-
-/* .section>p {
-    margin-top: 16px;
-} */
 
 [class^="grid-item-"] {
     display: block;
@@ -157,10 +146,13 @@ html {
     grid-row: span 2;
 }
 
+#About .card {
+    padding: 32px;
+}
+
 #introduction {
     display: flex;
     gap: 32px;
-    padding: 32px;
 }
 
 #introduction>* {
@@ -205,6 +197,52 @@ html {
     stroke: #ffffff;
     will-change: stroke-dashoffset;
     transform: translateZ(0);
+}
+
+#contact {
+    display: flex;
+    gap: 16px;
+}
+
+.clickable {
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.clickable svg {
+    width: 10vw;
+}
+
+#linkedin {
+    background-color: #2867B2;
+}
+
+#github {
+    background-color: #000000;
+}
+
+#email {
+    background-color: var(--MNMLUI-ACCENT);
+}
+
+#footer,
+#footer>* {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#footer>a {
+    color: var(--MNMLUI-ACCENT);
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+#footer>a:hover {
+    text-shadow: 0 0 16px color-mix(in srgb, var(--MNMLUI-ACCENT) 50%, transparent 75%);
 }
 
 #Resume .card {
@@ -318,6 +356,10 @@ html {
 @media (min-width: 700px) {
     body {
         margin-bottom: 16px;
+    }
+
+    .clickable svg {
+        width: 64px;
     }
 
     .resume-grid {
