@@ -143,13 +143,12 @@ a {
     grid-row: span 2;
 }
 
-#About .card {
+#About .card:not(#introduction) {
     padding: 32px;
 }
 
 #introduction {
     display: flex;
-    gap: 32px;
 }
 
 #introduction>* {
@@ -163,6 +162,8 @@ a {
     flex-direction: column;
     gap: 32px;
     justify-content: center;
+    margin: 32px;
+    width: calc(100% - 64px);
 }
 
 #about-text h1 {
@@ -177,6 +178,8 @@ a {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    width: calc(100% - 32px);
+    border-radius: 32px;
 }
 
 #HandwrittenName {
@@ -187,7 +190,6 @@ a {
     mix-blend-mode: luminosity;
     transform: translateZ(0);
     /* lag on some mobile devices (MY PHONE NOOOOO 😭😭) */
-
 }
 
 #HandwrittenName path {
@@ -307,8 +309,8 @@ a {
         align-items: stretch;
     }
 
-    #introduction>* {
-        width: 100%;
+    #name {
+        margin: 16px 16px 0px 16px;
     }
 
     #about-text {
@@ -337,10 +339,6 @@ a {
         background: #1a1a1a;
     }
 
-    /* .section {
-        background-color: #1a1a1a;
-    } */
-
     #name {
         background-image: url('https://www.iclarified.com/images/news/97556/465560/465560.jpg');
     }
@@ -353,6 +351,10 @@ a {
 @media (min-width: 700px) {
     body {
         margin-bottom: 16px;
+    }
+
+    #name {
+        margin: 16px 0px 16px 16px;
     }
 
     .clickable svg {
