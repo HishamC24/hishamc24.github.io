@@ -173,7 +173,7 @@ a {
 
 #name {
     /* background-image: url('https://www.iclarified.com/images/news/97556/465557/465557.jpg'); */
-    background-image: url('/Images/iOS26 Light Mode.png');
+    background-image: url('/Images Raw/iOS26 Light Mode.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -342,7 +342,7 @@ a {
 
     #name {
         /* background-image: url('https://www.iclarified.com/images/news/97556/465560/465560.jpg'); */
-        background-image: url('/Images/iOS26 Dark Mode.png');
+        background-image: url('/Images Raw/iOS26 Dark Mode.png');
     }
 
     #Resume hr {

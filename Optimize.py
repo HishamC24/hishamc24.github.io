@@ -3,7 +3,7 @@ import json
 from PIL import Image
 
 # Path to database and image folders
-DATABASE_PATH = "Database.json"
+DATABASE_PATH = "Database_PreShuffle.json"
 IMAGES_DIR = "Images/Portfolio"
 RESIZED_DIR = os.path.join(IMAGES_DIR, "Resized")
 

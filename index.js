@@ -33,7 +33,7 @@ fetch("Database.json")
             const klass = aspectToClass[primary.aspectRatio] || aspectToClass["1:1"];
             const img = document.createElement("img");
             img.className = klass;
-            img.src = `Images/${primary.src}`;
+            img.src = `${primary.src}`;
             img.alt = primary.description || primary.src;
             if (primary["object-fit"] === "contain") {
                 img.style.objectFit = "contain";
