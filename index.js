@@ -27,19 +27,17 @@ fetch("Database.json")
             threshold: 0.1
         });
 
-        data.forEach((item) => {
-            const primary = item.primaryImage;
-            if (!primary) return;
-            const klass = aspectToClass[primary.aspectRatio] || aspectToClass["1:1"];
+        function appendImage(imageData, fallbackAlt) {
+            if (!imageData) return;
+
+            const klass = aspectToClass[imageData.aspectRatio] || aspectToClass["1:1"];
             const img = document.createElement("img");
             img.className = klass;
-            img.src = `Images/${primary.src}`;
-            img.alt = primary.description || primary.src;
-            if (primary["object-fit"] === "contain") {
-                img.style.objectFit = "contain";
-            } else {
-                img.style.objectFit = "cover";
-            }
+            img.src = `Images/${imageData.src}`;
+
+            img.alt = imageData.description || fallbackAlt || imageData.src;
+
+            img.style.objectFit = "cover";
             img.style.opacity = "0";
             img.style.transition = "opacity 1s";
             section.appendChild(img);
@@ -57,6 +55,11 @@ fetch("Database.json")
                     }
                 }, 1);
             }
+        }
+
+        data.forEach((item) => {
+            const fallbackDescription = item.compactDescription || item.fullDescription || item.name;
+            appendImage(item.primaryImage, fallbackDescription);
         });
     })
     .catch((err) => {

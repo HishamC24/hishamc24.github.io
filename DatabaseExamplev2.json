@@ -1,0 +1,40 @@
+[
+  {
+    "name": "name",
+    "compactDescription": "a short description",
+    "fullDescription": "a longer description with more details",
+    "date": {
+      "start": "2022-01-01",
+      "end": "2022-12-31"
+    },
+    "primaryImage": {
+      "src": "src",
+      "aspectRatio": "1:1"
+    },
+    "secondaryImages": [
+      {
+        "src": "src",
+        "aspectRatio": "16:9",
+        "description": null
+      },
+      {
+        "src": "src",
+        "aspectRatio": "2:1",
+        "description": "description",
+        "date": {
+          "start": null,
+          "end": "2022-12-31"
+        }
+      }
+    ]
+  },
+  {
+    "NOTES, NOT PART OF THE MAIN FORMAT": [
+      "empty start date means it was made in one day",
+      "empty end date means it is still in progress",
+      "secondary images can be in any aspect ratio, but the primary image must be 1:1. 2:1, 1:2, or 2:2",
+      "secondary image descriptions are optional, but primary MUST have a short and long description",
+      "name is optional"
+    ]
+  }
+]

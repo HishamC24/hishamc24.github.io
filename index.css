@@ -303,8 +303,84 @@ a {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media (max-width: 700px) {
+#popup {
+    position: fixed;
+    border-radius: 56px;
+    left: 50%;
+    top: 50%;
+    width: calc(100dvw - 16px);
+    height: calc(100dvh - 16px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
 
+#popup-image-grid {
+    width: calc(100% - 16px);
+    margin: 8px;
+}
+
+#popup-image-grid>img {
+    width: 100%;
+    border-radius: 48px;
+}
+
+#popup-top>#title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px 0px 0px 32px;
+}
+
+#popup-top>#date {
+    font-family: 'SF Mono';
+    margin-left: 32px;
+}
+
+#popup-top>#short-description {
+    font-family: 'SF Mono';
+    margin: 32px 64px;
+    text-align: center;
+}
+
+#popup-bottom {
+    margin: 32px;
+}
+
+#popup-bottom>p {
+    text-indent: 32px;
+}
+
+#popup-close {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background-color: color-mix(in srgb, var(--MNMLUI-ACCENT) 50%, transparent 50%);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s ease-in-out;
+}   
+
+#popup-close:hover {
+    background-color: var(--MNMLUI-ACCENT);
+    /* background-color: color-mix(in srgb, var(--MNMLUI-ACCENT) 75%, transparent 75%); */
+}
+
+#popup-close:active {
+    background-color: var(--MNMLUI-ACCENT);
+}
+
+#popup-close>svg {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 700px) {
+    
     #introduction {
         flex-direction: column;
         align-items: stretch;
