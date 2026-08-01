@@ -12,7 +12,7 @@ const aspectToSpan = {
     "2:2": { cols: 2, rows: 2 },
 };
 
-fetch("Database.json")
+fetch("Database_PreShuffle.json")
     .then((response) => response.json())
     .then((data) => {
         const section = document.getElementById("portfolio-grid");
@@ -27,7 +27,8 @@ fetch("Database.json")
             threshold: 0.1
         });
 
-        function appendImage(imageData, fallbackAlt) {
+        // Pass the entire item payload into this function
+        function appendImage(imageData, itemData) {
             if (!imageData) return;
 
             const klass = aspectToClass[imageData.aspectRatio] || aspectToClass["1:1"];
@@ -35,13 +36,20 @@ fetch("Database.json")
             img.className = klass;
             img.src = `Images/${imageData.src}`;
 
+            const fallbackAlt = itemData.compactDescription || itemData.fullDescription || itemData.name;
             img.alt = imageData.description || fallbackAlt || imageData.src;
 
             img.style.objectFit = "cover";
             img.style.opacity = "0";
             img.style.transition = "opacity 1s";
-            section.appendChild(img);
+            img.style.cursor = "pointer"; // Add pointer cursor for better UX
 
+            // Show the popup on click, passing the specific JSON object
+            img.addEventListener("click", () => {
+                openPopup(itemData);
+            });
+
+            section.appendChild(img);
             observer.observe(img);
 
             if (img.complete) {
@@ -58,13 +66,90 @@ fetch("Database.json")
         }
 
         data.forEach((item) => {
-            const fallbackDescription = item.compactDescription || item.fullDescription || item.name;
-            appendImage(item.primaryImage, fallbackDescription);
+            appendImage(item.primaryImage, item);
         });
     })
     .catch((err) => {
-        console.error("Failed to load images from Database.json", err);
+        console.error("Failed to load images from Database", err);
     });
+
+
+// --- NEW POPUP LOGIC ---
+
+function openPopup(item) {
+    const popup = document.getElementById("popup");
+
+    // 1. Set Title (Rule: name is optional)
+    const titleEl = document.getElementById("title");
+    titleEl.textContent = item.name || "Project";
+
+    // 2. Set Date Formatting (Rule: empty start = 1 day, empty end = in progress)
+    const dateEl = document.getElementById("date");
+    const start = item.date.start;
+    const end = item.date.end;
+
+    if (!start && end) {
+        dateEl.textContent = end; // e.g., "7.31.26"
+    } else if (start && !end) {
+        dateEl.textContent = `${start} - Current`;
+    } else if (start && end) {
+        dateEl.textContent = `${start} - ${end}`;
+    } else {
+        dateEl.textContent = ""; // Hide if no dates provided
+    }
+
+    // 3. Set Short Description (Rule: Primary MUST have a short desc)
+    const shortDescEl = document.getElementById("short-description");
+    shortDescEl.textContent = item.compactDescription || "";
+
+    // 4. Populate Images (Rule: Primary is required, secondary is optional)
+    const imageGrid = document.getElementById("popup-image-grid");
+    imageGrid.innerHTML = ""; // Clear out placeholder/previous images
+
+    // Append Primary
+    if (item.primaryImage) {
+        const primaryImg = document.createElement("img");
+        primaryImg.src = `Images/${item.primaryImage.src}`;
+        imageGrid.appendChild(primaryImg);
+    }
+
+    // Append Secondary (can be any aspect ratio per rules)
+    if (item.secondaryImages && item.secondaryImages.length > 0) {
+        item.secondaryImages.forEach(secImg => {
+            const secImgEl = document.createElement("img");
+            secImgEl.src = `Images/${secImg.src}`;
+            imageGrid.appendChild(secImgEl);
+        });
+    }
+
+    // 5. Populate Full Description (Rule: Primary MUST have long desc)
+    const bottomEl = document.getElementById("popup-bottom");
+    bottomEl.innerHTML = "";
+
+    if (item.fullDescription) {
+        // Split text by new lines so spacing is preserved 
+        const paragraphs = item.fullDescription.split('\n');
+        paragraphs.forEach(text => {
+            if (text.trim() !== "") {
+                const p = document.createElement("p");
+                p.textContent = text;
+                bottomEl.appendChild(p);
+                bottomEl.appendChild(document.createElement("br"));
+            }
+        });
+    }
+
+    // Unhide the popup
+    popup.style.display = "block";
+}
+
+// Ensure close button properly hides the popup
+const popupCloseBtn = document.getElementById("popup-close");
+if (popupCloseBtn) {
+    popupCloseBtn.addEventListener("click", () => {
+        document.getElementById("popup").style.display = "none";
+    });
+}
 
 const actionBtns = document.querySelectorAll(".action-btn");
 actionBtns.forEach(btn => {

@@ -591,32 +591,17 @@
             </div>
         </div>
     </section>
-    <div class="glassy" id="popup">
-        <div id="popup-top">
-            <div id="popup-image-grid">
-                <img src="Images Raw/Portfolio/FrameSeeker Github Repo Image 3.19.26.png">
+    <div class="glassy" id="popup" style="display: none;">
+        <div id="popup-content">
+            <div id="popup-top">
+                <div id="popup-image-grid"></div>
+                <p id="title"></p>
+                <p id="date"></p>
+                <p id="short-description"></p>
             </div>
-            <p id="title">FrameSeeker</p>
-            <p id="date">09.02.25 - Now</p>
-            <p id="short-description">A PWA that allows you to view and save frames of a video.</p>
+            <div id="popup-bottom"></div>
         </div>
-        <div id="popup-bottom">
-            <p>
-                FrameSeeker is a site that allows you to save a full quality image of a specific
-                frame in a given video. This was actually made to help me get clean and uninterrupted images from Apple
-                events and keynotes at precise timestamps.
-            </p>
-            <br>
-            <p>
-                The PWA allows you to upload a video (even using share targets on mobile or desktop) and capture a full
-                quality image at a given frame. You are able to set the framerate of the video, jump to a certain frame
-                (based on the framerate), set playback speed to 0.5x, 1x, 2x, and 4x, as well as full screen the video,
-                or fit the video to show the ambient adaptive background. On newer devices and on desktop, you can also
-                set the save folder to save all your images to a given location locally, so the images don't all end up
-                in your downloads folder. There are a handful of utility buttons to skip 15 seconds, 1 second, and go
-                one frame at a time forwards and backwards.
-            </p>
-        </div>
+
         <div id="popup-close">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -625,6 +610,49 @@
             </svg>
         </div>
     </div>
+    <!-- <div class="glassy" id="popup">
+        <div id="popup-content">
+            <div id="popup-top">
+                <div id="popup-image-grid">
+                    <img src="Images Raw/Portfolio/FrameSeeker Github Repo Image 3.19.26.png">
+                </div>
+                <p id="title">FrameSeeker</p>
+                <p id="date">09.02.25 - Now</p>
+                <p id="short-description">A PWA that allows you to view and save frames of a video.</p>
+            </div>
+            <div id="popup-bottom">
+                <p>
+                    FrameSeeker is a site that allows you to save a full quality image of a specific
+                    frame in a given video. This was actually made to help me get clean and uninterrupted images from
+                    Apple
+                    events and keynotes at precise timestamps.
+                </p>
+                <br>
+                <p>
+                    The PWA allows you to upload a video (even using share targets on mobile or desktop) and capture a
+                    full
+                    quality image at a given frame. You are able to set the framerate of the video, jump to a certain
+                    frame
+                    (based on the framerate), set playback speed to 0.5x, 1x, 2x, and 4x, as well as full screen the
+                    video,
+                    or fit the video to show the ambient adaptive background. On newer devices and on desktop, you can
+                    also
+                    set the save folder to save all your images to a given location locally, so the images don't all end
+                    up
+                    in your downloads folder. There are a handful of utility buttons to skip 15 seconds, 1 second, and
+                    go
+                    one frame at a time forwards and backwards.
+                </p>
+            </div>
+        </div>
+        <div id="popup-close" class="glassy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+            </svg>
+        </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
     <!-- <script type="module">
     import { squircleObserver } from "https://esm.sh/corner-smoothing";

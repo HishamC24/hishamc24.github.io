@@ -167,7 +167,7 @@
   {
     "name": null,
     "compactDescription": "A PWA that allows you to view and save frames of a video.",
-    "fullDescription": "A PWA that allows you to view and save frames of a video.",
+    "fullDescription": "FrameSeeker is a site that allows you to save a full quality image of a specific frame in a given video. This was actually made to help me get clean and uninterrupted images from Apple events and keynotes at precise timestamps.\nThe PWA allows you to upload a video (even using share targets on mobile or desktop) and capture a full quality image at a given frame. You are able to set the framerate of the video, jump to a certain frame (based on the framerate), set playback speed to 0.5x, 1x, 2x, and 4x, as well as full screen the video, or fit the video to show the ambient adaptive background. On newer devices and on desktop, you can also set the save folder to save all your images to a given location locally, so the images don't all end up in your downloads folder. There are a handful of utility buttons to skip 15 seconds, 1 second, and go one frame at a time forwards and backwards.",
     "date": {
       "start": null,
       "end": null
@@ -292,6 +292,19 @@
     "primaryImage": {
       "src": "Portfolio/Camera Settings 3.29.26.png",
       "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": "MultiPlay",
+    "compactDescription": "A Universal Music Player.",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": "7.19.26"
+    },
+    "primaryImage": {
+      "src": "Portfolio/MultiPlay Image 7.19.26.png",
+      "aspectRatio": "2:2"
     }
   }
 ]
