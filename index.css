@@ -76,7 +76,6 @@ a {
     /* object-fit: cover; */
     background: #ffffff;
     border-radius: 48px;
-    transition: transform 0.25s ease-in-out;
 }
 
 [class^="grid-item-"]:hover {

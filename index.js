@@ -41,7 +41,7 @@ fetch("Database_PreShuffle.json")
 
             img.style.objectFit = "cover";
             img.style.opacity = "0";
-            img.style.transition = "opacity 1s";
+            img.style.transition = "opacity 1s, transform 0.25s ease-in-out";
             img.style.cursor = "pointer"; // Add pointer cursor for better UX
 
             // Show the popup on click, passing the specific JSON object
