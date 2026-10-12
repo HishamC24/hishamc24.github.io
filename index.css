@@ -76,6 +76,12 @@ a {
     /* object-fit: cover; */
     background: #ffffff;
     border-radius: 48px;
+    transition: transform 0.25s ease-in-out;
+}
+
+[class^="grid-item-"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 
 :root {
