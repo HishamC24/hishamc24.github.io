@@ -1,311 +1,323 @@
 [
   {
-    "primaryImage": {
-      "src": "Portfolio/6.9.24.png",
-      "aspectRatio": "2:1",
-      "description": "Well, the event is tomorrow! Based on what gets announced, ill make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-09-2024"
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Portfolio/TimeBreak Image 3.23.26.png",
-      "aspectRatio": "1:2",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Portfolio/Songify Image 3.23.26.png",
-      "aspectRatio": "2:2",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Portfolio/6.1.24.png",
-      "aspectRatio": "1:1",
-      "description": "I always had the idea for iPhones without the dynamic island, to incorporate all the live activities into the home bar instead. Possibly good, possibly bad, not sure but 100% a concept for now.",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-01-2024"
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Portfolio/FrameSeeker Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "A PWA that allows you to view and save frames of a video.",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Portfolio/6.7.24.png",
-      "aspectRatio": "2:2",
-      "description": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!\nThis time, in honor of (supposedly) a collaboration between OpenAI and Apple at the WWDC event (June 13th), I've made a concept of a home screen button being changed into a GPT Launcher!\n(also I had to use the 15 pro and not pro max because that's the only native lockscreen mockup Apple has on figma lol)",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-07-2024"
-      }
-    }
-  },
-  {
+    "name": null,
+    "compactDescription": "iOS18 Control Center Recreation",
+    "fullDescription": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac, how fitting. Anyway, it took some time to recreate part of the new control center!",
+    "date": {
+      "start": null,
+      "end": "06.12.24"
+    },
     "primaryImage": {
       "src": "Portfolio/6.12.24.png",
-      "aspectRatio": "2:1",
-      "description": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac, how fitting. Anyway, it took some time to recreate part of the new control center!",
-      "autoBackground": true,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-12-2024"
-      }
+      "aspectRatio": "2:1"
     },
     "secondaryImages": [
       {
-        "src": "Images Raw/6.11.24.png",
+        "src": "6.11.24.png",
         "aspectRatio": "2:1",
         "description": "Well, WWDC24 was yesterday and they introduced a lot of features, including many features that already existed on android, as well as a ton of useful AI features (called apple intelligence, of course, because why would they NOT rename it?) and I wanted to recreate the control center. I am pretty busy but I will try and recreate it as well as I can!",
-        "autoBackground": false,
-        "object-fit": "cover",
         "date": {
-          "type": "single",
-          "value": "06-11-2024"
+          "start": null,
+          "end": "06.11.24"
         }
       }
     ]
   },
   {
+    "name": null,
+    "compactDescription": "Custom Linux/Windows Control Center",
+    "fullDescription": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
+    "date": {
+      "start": null,
+      "end": "09.18.24"
+    },
     "primaryImage": {
-      "src": "Portfolio/UniCalc Image 3.23.26.png",
-      "aspectRatio": "2:2",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
+      "src": "Portfolio/Concept Windows UI.png",
+      "aspectRatio": "1:1"
     }
   },
   {
+    "name": "Colorizer",
+    "compactDescription": "A PWA to fullscreen any color you want.",
+    "fullDescription": "Colorizer is a site that allows you to show any color across the entirety of your screen. I wanted to have an underglow lighting on a model iPhone 16, but I did not have a colored lightbox, so I made this app to use my s11 ultra tablet as a underglow for the device.\nThis PWA allows you to choose a color either in hex, hsl, hsv, or rgb, and save colors for later use. The color gets fullscreened, and on tapping empty space, the menu dissapears, and can reappear with one tap.",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
-      "src": "Portfolio/Imagiline Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
+      "src": "Portfolio/Colorizer Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1"
     }
   },
   {
+    "name": null,
+    "compactDescription": "Video Editing App",
+    "fullDescription": "A video editing platform, could use some work but its a good base to start on. It is bare bones, maybe I'll revisit this in the future and improve it. This concept shows basic video editing elements with clips, text, and transitions.",
+    "date": {
+      "start": null,
+      "end": "06.05.24"
+    },
     "primaryImage": {
       "src": "Portfolio/6.5.24.png",
-      "aspectRatio": "1:1",
-      "description": "A video editing platform, could use some work but its a good base to start on. Mabye I'll revisit this in the future and improve it. It looks pretty bare lol",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-05-2024"
-      }
+      "aspectRatio": "1:1"
     }
   },
   {
+    "name": "NewGenUI",
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
-      "src": "Portfolio/6.2.24.png",
-      "aspectRatio": "2:1",
-      "description": "Another idea, have a button in an app transform to display data or any information that might be useful!",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-02-2024"
-      }
+      "src": "Portfolio/NewGenUI Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1"
     }
   },
   {
+    "name": "FaceMe",
+    "compactDescription": "A PWA to talk to friends, face to face.",
+    "fullDescription": "",
+    "date": {
+      "start": "5.30.26",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/FaceMe Image 10.15.26.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "TTG Technologies Website Redesign",
+    "fullDescription": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign! This concept includes a floating navigation bar, and a contact sidebar.",
+    "date": {
+      "start": null,
+      "end": "05.31.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/5.31.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Smart Home App",
+    "fullDescription": "Finished the smart home concept that I started yesterday, I couldn't find a spot to fit text on the laundry section and the TV, so I tried to make them look as fitting as possible. This concept includes multiple smarthome devices.",
+    "date": {
+      "start": null,
+      "end": "06.04.24"
+    },
     "primaryImage": {
       "src": "Portfolio/6.4.24.png",
-      "aspectRatio": "1:1",
-      "description": "Finished the smart home concept that I started yesterday, I couldn't find a spot to fit text on the laundry section and the TV, so I tried to make them look as fitting as possible",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-04-2024"
-      }
+      "aspectRatio": "1:1"
     },
     "secondaryImages": [
       {
         "src": "Portfolio/6.3.24.png",
         "aspectRatio": "2:1",
         "description": "Not done with today's design since alot has been happening, but I do have something to show that ill finish tomorrow! You may or may not notice a theme throughout this... lol",
-        "autoBackground": false,
-        "object-fit": "cover",
         "date": {
-          "type": "single",
-          "value": "06-03-2024"
+          "start": null,
+          "end": "06.03.24"
         }
       }
     ]
   },
   {
+    "name": "FrameSeeker",
+    "compactDescription": "A PWA to view and save frames of a video.",
+    "fullDescription": "FrameSeeker is a site that allows you to save a full quality image of a specific frame in a given video. This was actually made to help me get clean and uninterrupted images from Apple events and keynotes at precise timestamps.\nThe PWA allows you to upload a video (even using share targets on mobile or desktop) and capture a full quality image at a given frame. You are able to set the framerate of the video, jump to a certain frame (based on the framerate), set playback speed to 0.5x, 1x, 2x, and 4x, as well as full screen the video, or fit the video to show the ambient adaptive background. On newer devices and on desktop, you can also set the save folder to save all your images to a given location locally, so the images don't all end up in your downloads folder. There are a handful of utility buttons to skip 15 seconds, 1 second, and go one frame at a time forwards and backwards.",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
-      "src": "Portfolio/NewGenUI Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
+      "src": "Portfolio/FrameSeeker Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1"
     }
   },
   {
+    "name": "UniCalc",
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
-      "src": "Portfolio/Concept Windows UI.png",
-      "aspectRatio": "1:1",
-      "description": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "09-18-2024"
-      }
+      "src": "Portfolio/UniCalc Image 3.23.26.png",
+      "aspectRatio": "2:2"
     }
   },
   {
+    "name": "Imagiline",
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
-      "src": "Portfolio/5.31.24.png",
-      "aspectRatio": "2:1",
-      "description": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign!",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "05-31-2024"
-      }
+      "src": "Portfolio/Imagiline Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1"
     }
   },
   {
+    "name": null,
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
       "src": "Portfolio/Nintendo Switch 2 type 3.png",
-      "aspectRatio": "1:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
+      "aspectRatio": "1:1"
     }
   },
   {
-    "primaryImage": {
-      "src": "Portfolio/Colorizer Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
-    }
-  },
-  {
-    "primaryImage": {
-      "src": "Portfolio/5.30.24.png",
-      "aspectRatio": "1:1",
-      "description": "Decided to start building my portfolio, so ill make a mockup every day until I get bored I guess lol",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "05-30-2024"
-      }
-    }
-  },
-  {
+    "name": "StandBy",
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
       "src": "Portfolio/StandBy Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
+      "aspectRatio": "2:1"
     }
   },
   {
+    "name": null,
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
     "primaryImage": {
       "src": "Portfolio/Camera Settings 3.29.26.png",
-      "aspectRatio": "1:1",
-      "description": "",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "range",
-        "start": null,
-        "end": null
-      }
+      "aspectRatio": "1:1"
     }
   },
   {
+    "name": null,
+    "compactDescription": "Dynamic Button",
+    "fullDescription": "Another idea for a Dynamic Island alternative, having a button in an app transform to display data or any information that might be useful!",
+    "date": {
+      "start": null,
+      "end": "06.02.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.2.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Dynamic Lock Screen Button",
+    "fullDescription": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!\nThis time, in honor of (supposedly) a collaboration between OpenAI and Apple at the WWDC event (June 13th), I've made a concept of a home screen button being changed into a GPT Launcher!\n(also I had to use the 15 pro and not pro max because that's the only native lockscreen mockup Apple has on figma)",
+    "date": {
+      "start": null,
+      "end": "06.07.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.7.24.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "ChatGPT Dynamic Island",
+    "fullDescription": "Well, the event is tomorrow! Based on what gets announced, I'll make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
+    "date": {
+      "start": null,
+      "end": "06.09.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.9.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Starting to build my portfolio.",
+    "fullDescription": "Decided to start building my portfolio, creating a mockup every day to the best of my ability. This mockup is a simple login page for a banking app, some glassmorphism, with a clean minimal UI.",
+    "date": {
+      "start": null,
+      "end": "05.30.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/5.30.24.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": "Songify",
+    "compactDescription": "",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/Songify Image 3.23.26.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Dynamic Homebar",
+    "fullDescription": "I always had the idea for iPhones without the dynamic island, to incorporate all the live activities into the home bar instead. Possibly good, possibly bad, not sure but 100% a concept for now. The concept falls short for if a user wants to actually use the home bar. Also, in iOS 26, the home bar was removed/hidden, so this concept is now out of date.",
+    "date": {
+      "start": null,
+      "end": "06.01.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.1.24.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": "MultiPlay",
+    "compactDescription": "A Universal Music Player.",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": "7.19.26"
+    },
+    "primaryImage": {
+      "src": "Portfolio/MultiPlay Image 7.19.26.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": "TimeBreak",
+    "compactDescription": "A PWA to see what time to take a break.",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/TimeBreak Image 3.23.26.png",
+      "aspectRatio": "1:2"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Minimal Video Player",
+    "fullDescription": "Making the video player more minimal, less obtrusive when it pops up! Although this design should have a 3 dot menu button, I decided to not include it for now.",
+    "date": {
+      "start": null,
+      "end": "06.13.24"
+    },
     "primaryImage": {
       "src": "Portfolio/6.13.24.png",
-      "aspectRatio": "2:1",
-      "description": "Making the video player more minimal, less obtrusive when it pops up!",
-      "autoBackground": false,
-      "object-fit": "cover",
-      "date": {
-        "type": "single",
-        "value": "06-13-2024"
-      }
+      "aspectRatio": "2:1"
     }
   }
 ]

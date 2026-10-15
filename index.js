@@ -12,7 +12,7 @@ const aspectToSpan = {
     "2:2": { cols: 2, rows: 2 },
 };
 
-fetch("Database_PreShuffle.json")
+fetch("Database.json")
     .then((response) => response.json())
     .then((data) => {
         const section = document.getElementById("portfolio-grid");
@@ -81,7 +81,7 @@ function openPopup(item) {
 
     // 1. Set Title (Rule: name is optional)
     const titleEl = document.getElementById("title");
-    titleEl.textContent = item.name || "Project";
+    titleEl.textContent = item.name || "Concept Project";
 
     // 2. Set Date Formatting (Rule: empty start = 1 day, empty end = in progress)
     const dateEl = document.getElementById("date");

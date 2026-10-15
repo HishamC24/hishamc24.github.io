@@ -1,8 +1,8 @@
 [
   {
     "name": null,
-    "compactDescription": "Decided to start building my portfolio.",
-    "fullDescription": "Decided to start building my portfolio, so ill make a mockup every day until I get bored I guess lol",
+    "compactDescription": "Starting to build my portfolio.",
+    "fullDescription": "Decided to start building my portfolio, creating a mockup every day to the best of my ability. This mockup is a simple login page for a banking app, some glassmorphism, with a clean minimal UI.",
     "date": {
       "start": null,
       "end": "05.30.24"
@@ -14,8 +14,8 @@
   },
   {
     "name": null,
-    "compactDescription": "While not the best, I'd say this is a good improvement on the current site.",
-    "fullDescription": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign!",
+    "compactDescription": "TTG Technologies Website Redesign",
+    "fullDescription": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign! This concept includes a floating navigation bar, and a contact sidebar.",
     "date": {
       "start": null,
       "end": "05.31.24"
@@ -27,8 +27,8 @@
   },
   {
     "name": null,
-    "compactDescription": "I always had the idea for iPhones without the dynamic island.",
-    "fullDescription": "I always had the idea for iPhones without the dynamic island, to incorporate all the live activities into the home bar instead. Possibly good, possibly bad, not sure but 100% a concept for now.",
+    "compactDescription": "Dynamic Homebar",
+    "fullDescription": "I always had the idea for iPhones without the dynamic island, to incorporate all the live activities into the home bar instead. Possibly good, possibly bad, not sure but 100% a concept for now. The concept falls short for if a user wants to actually use the home bar. Also, in iOS 26, the home bar was removed/hidden, so this concept is now out of date.",
     "date": {
       "start": null,
       "end": "06.01.24"
@@ -40,8 +40,8 @@
   },
   {
     "name": null,
-    "compactDescription": "Another idea, have a button in an app transform to display data or any information that might be useful!",
-    "fullDescription": "Another idea, have a button in an app transform to display data or any information that might be useful!",
+    "compactDescription": "Dynamic Button",
+    "fullDescription": "Another idea for a Dynamic Island alternative, having a button in an app transform to display data or any information that might be useful!",
     "date": {
       "start": null,
       "end": "06.02.24"
@@ -53,8 +53,8 @@
   },
   {
     "name": null,
-    "compactDescription": "Finished the smart home concept that I started yesterday.",
-    "fullDescription": "Finished the smart home concept that I started yesterday, I couldn't find a spot to fit text on the laundry section and the TV, so I tried to make them look as fitting as possible",
+    "compactDescription": "Smart Home App",
+    "fullDescription": "Finished the smart home concept that I started yesterday, I couldn't find a spot to fit text on the laundry section and the TV, so I tried to make them look as fitting as possible. This concept includes multiple smarthome devices.",
     "date": {
       "start": null,
       "end": "06.04.24"
@@ -77,8 +77,8 @@
   },
   {
     "name": null,
-    "compactDescription": "A video editing platform, could use some work but its a good base to start on.",
-    "fullDescription": "A video editing platform, could use some work but its a good base to start on. Mabye I'll revisit this in the future and improve it. It looks pretty bare lol",
+    "compactDescription": "Video Editing App",
+    "fullDescription": "A video editing platform, could use some work but its a good base to start on. It is bare bones, maybe I'll revisit this in the future and improve it. This concept shows basic video editing elements with clips, text, and transitions.",
     "date": {
       "start": null,
       "end": "06.05.24"
@@ -90,8 +90,8 @@
   },
   {
     "name": null,
-    "compactDescription": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!",
-    "fullDescription": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!\nThis time, in honor of (supposedly) a collaboration between OpenAI and Apple at the WWDC event (June 13th), I've made a concept of a home screen button being changed into a GPT Launcher!\n(also I had to use the 15 pro and not pro max because that's the only native lockscreen mockup Apple has on figma lol)",
+    "compactDescription": "Dynamic Lock Screen Button",
+    "fullDescription": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!\nThis time, in honor of (supposedly) a collaboration between OpenAI and Apple at the WWDC event (June 13th), I've made a concept of a home screen button being changed into a GPT Launcher!\n(also I had to use the 15 pro and not pro max because that's the only native lockscreen mockup Apple has on figma)",
     "date": {
       "start": null,
       "end": "06.07.24"
@@ -103,8 +103,8 @@
   },
   {
     "name": null,
-    "compactDescription": "Well, the event is tomorrow!",
-    "fullDescription": "Well, the event is tomorrow! Based on what gets announced, ill make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
+    "compactDescription": "ChatGPT Dynamic Island",
+    "fullDescription": "Well, the event is tomorrow! Based on what gets announced, I'll make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
     "date": {
       "start": null,
       "end": "06.09.24"
@@ -116,7 +116,7 @@
   },
   {
     "name": null,
-    "compactDescription": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac.",
+    "compactDescription": "iOS18 Control Center Recreation",
     "fullDescription": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac, how fitting. Anyway, it took some time to recreate part of the new control center!",
     "date": {
       "start": null,
@@ -140,8 +140,8 @@
   },
   {
     "name": null,
-    "compactDescription": "Making the video player more minimal, less obtrusive when it pops up!",
-    "fullDescription": "Making the video player more minimal, less obtrusive when it pops up!",
+    "compactDescription": "Minimal Video Player",
+    "fullDescription": "Making the video player more minimal, less obtrusive when it pops up! Although this design should have a 3 dot menu button, I decided to not include it for now.",
     "date": {
       "start": null,
       "end": "06.13.24"
@@ -153,7 +153,7 @@
   },
   {
     "name": null,
-    "compactDescription": "Recently got interested in linux and custom distros.",
+    "compactDescription": "Custom Linux/Windows Control Center",
     "fullDescription": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
     "date": {
       "start": null,
@@ -165,8 +165,8 @@
     }
   },
   {
-    "name": null,
-    "compactDescription": "A PWA that allows you to view and save frames of a video.",
+    "name": "FrameSeeker",
+    "compactDescription": "A PWA to view and save frames of a video.",
     "fullDescription": "FrameSeeker is a site that allows you to save a full quality image of a specific frame in a given video. This was actually made to help me get clean and uninterrupted images from Apple events and keynotes at precise timestamps.\nThe PWA allows you to upload a video (even using share targets on mobile or desktop) and capture a full quality image at a given frame. You are able to set the framerate of the video, jump to a certain frame (based on the framerate), set playback speed to 0.5x, 1x, 2x, and 4x, as well as full screen the video, or fit the video to show the ambient adaptive background. On newer devices and on desktop, you can also set the save folder to save all your images to a given location locally, so the images don't all end up in your downloads folder. There are a handful of utility buttons to skip 15 seconds, 1 second, and go one frame at a time forwards and backwards.",
     "date": {
       "start": null,
@@ -178,9 +178,9 @@
     }
   },
   {
-    "name": null,
-    "compactDescription": "",
-    "fullDescription": "",
+    "name": "Colorizer",
+    "compactDescription": "A PWA to fullscreen any color you want.",
+    "fullDescription": "Colorizer is a site that allows you to show any color across the entirety of your screen. I wanted to have an underglow lighting on a model iPhone 16, but I did not have a colored lightbox, so I made this app to use my s11 ultra tablet as a underglow for the device.\nThis PWA allows you to choose a color either in hex, hsl, hsv, or rgb, and save colors for later use. The color gets fullscreened, and on tapping empty space, the menu dissapears, and can reappear with one tap.",
     "date": {
       "start": null,
       "end": null
@@ -191,8 +191,8 @@
     }
   },
   {
-    "name": null,
-    "compactDescription": "",
+    "name": "TimeBreak",
+    "compactDescription": "A PWA to see what time to take a break.",
     "fullDescription": "",
     "date": {
       "start": null,
@@ -204,7 +204,7 @@
     }
   },
   {
-    "name": null,
+    "name": "NewGenUI",
     "compactDescription": "",
     "fullDescription": "",
     "date": {
@@ -217,7 +217,7 @@
     }
   },
   {
-    "name": null,
+    "name": "Imagiline",
     "compactDescription": "",
     "fullDescription": "",
     "date": {
@@ -230,7 +230,7 @@
     }
   },
   {
-    "name": null,
+    "name": "StandBy",
     "compactDescription": "",
     "fullDescription": "",
     "date": {
@@ -243,7 +243,7 @@
     }
   },
   {
-    "name": null,
+    "name": "UniCalc",
     "compactDescription": "",
     "fullDescription": "",
     "date": {
@@ -256,7 +256,7 @@
     }
   },
   {
-    "name": null,
+    "name": "Songify",
     "compactDescription": "",
     "fullDescription": "",
     "date": {
@@ -292,6 +292,19 @@
     "primaryImage": {
       "src": "Portfolio/Camera Settings 3.29.26.png",
       "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": "FaceMe",
+    "compactDescription": "A PWA to talk to friends, face to face.",
+    "fullDescription": "",
+    "date": {
+      "start": "5.30.26",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/FaceMe Image 10.15.26.png",
+      "aspectRatio": "2:2"
     }
   },
   {
