@@ -1,5 +1,161 @@
 [
   {
+    "name": "StandBy",
+    "compactDescription": "A PWA to replicate Apple's StandBy feature.",
+    "fullDescription": "StandBy is a PWA that is meant to replicate Apple's StandBy feature, allowing a modular way to make widgets. While still incomplete, it allows you to select different panels on the left and right by cycling through. Future updates will include being able to change the colors of each widget individually, and possibly with an ability to have a single widget mode, allowing you to have just one enlarged panel on the screen as opposed to two. ",
+    "date": {
+      "start": "01.11.26",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/StandBy Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Video Editing App",
+    "fullDescription": "A video editing platform, could use some work but its a good base to start on. It is bare bones, maybe I'll revisit this in the future and improve it. This concept shows basic video editing elements with clips, text, and transitions.",
+    "date": {
+      "start": null,
+      "end": "06.05.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.5.24.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Minimal Video Player",
+    "fullDescription": "Making the video player more minimal, less obtrusive when it pops up! Although this design should have a 3 dot menu button, I decided to not include it for now.",
+    "date": {
+      "start": null,
+      "end": "06.13.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.13.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Custom Linux/Windows Control Center",
+    "fullDescription": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
+    "date": {
+      "start": null,
+      "end": "09.18.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/Concept Windows UI.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Dynamic Button",
+    "fullDescription": "Another idea for a Dynamic Island alternative, having a button in an app transform to display data or any information that might be useful!",
+    "date": {
+      "start": null,
+      "end": "06.02.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.2.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": "Nintendo Switch 2",
+    "compactDescription": "A Concept for the Nintendo Switch 2 Logo",
+    "fullDescription": "",
+    "date": {
+      "start": null,
+      "end": "12.26.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/Nintendo Switch 2 type 3.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": "Imagiline",
+    "compactDescription": "A PWA to line up a previously taken image.",
+    "fullDescription": "Imagiline is a PWA that lets you overlay a previously taken image onto your camera feed, allowing you to line up your camera with the same location the image was previously taken in. There are options to rotate camera, upload an image, change the opacity, and to show a 3x3 grid.",
+    "date": {
+      "start": "01.07.26",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/Imagiline Github Repo Image 3.19.26.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "Dynamic Lock Screen Button",
+    "fullDescription": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!\nThis time, in honor of (supposedly) a collaboration between OpenAI and Apple at the WWDC event (June 13th), I've made a concept of a home screen button being changed into a GPT Launcher!\n(also I had to use the 15 pro and not pro max because that's the only native lockscreen mockup Apple has on figma)",
+    "date": {
+      "start": null,
+      "end": "06.07.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.7.24.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "TTG Technologies Website Redesign",
+    "fullDescription": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign! This concept includes a floating navigation bar, and a contact sidebar.",
+    "date": {
+      "start": null,
+      "end": "05.31.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/5.31.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": "UniCalc",
+    "compactDescription": "A Universal Calculator and Converter",
+    "fullDescription": "UniCalc is (an upcoming PWA) calculator, as well as a converter. The idea stems from first, making a concept calculator app from late 2021, while trying to make a Neumorphic style calculator. In November of 2025 I had restarted the design to focus on consistency and concentricity, but was only design and no actual numbers were inputted on the concept.\nAt the beginning of 2026, I decided to actually make another shot at this design, and ended up with a functionally easy to use calculator design, reminicent of iOS devices. It follows better form, and has slightly better designs, and ended up having potential for many conversion types.",
+    "date": {
+      "start": "03.06.26",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/UniCalc Image 3.23.26.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": null,
+    "compactDescription": "ChatGPT Dynamic Island",
+    "fullDescription": "Well, the event is tomorrow! Based on what gets announced, I'll make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
+    "date": {
+      "start": null,
+      "end": "06.09.24"
+    },
+    "primaryImage": {
+      "src": "Portfolio/6.9.24.png",
+      "aspectRatio": "2:1"
+    }
+  },
+  {
+    "name": "Camera Settings Concept",
+    "compactDescription": "A concept about the camera settings for a Camera UI.",
+    "fullDescription": "This is a concept about the camera settings for a camera UI like iOS26, made with the MNMLUI design language.",
+    "date": {
+      "start": null,
+      "end": "03.29.26"
+    },
+    "primaryImage": {
+      "src": "Portfolio/Camera Settings 3.29.26.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
     "name": null,
     "compactDescription": "iOS18 Control Center Recreation",
     "fullDescription": "Getting San Fransisco icons is hard, especially because in order to access the official icons, you need a mac, how fitting. Anyway, it took some time to recreate part of the new control center!",
@@ -24,63 +180,11 @@
     ]
   },
   {
-    "name": null,
-    "compactDescription": "Custom Linux/Windows Control Center",
-    "fullDescription": "Recently got interested in linux and custom distros, mabye even making my own. Started making a mockup, and its looking good so far!",
-    "date": {
-      "start": null,
-      "end": "09.18.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/Concept Windows UI.png",
-      "aspectRatio": "1:1"
-    }
-  },
-  {
-    "name": "Colorizer",
-    "compactDescription": "A PWA to fullscreen any color you want.",
-    "fullDescription": "Colorizer is a site that allows you to show any color across the entirety of your screen. I wanted to have an underglow lighting on a model iPhone 16, but I did not have a colored lightbox, so I made this app to use my s11 ultra tablet as a underglow for the device.\nThis PWA allows you to choose a color either in hex, hsl, hsv, or rgb, and save colors for later use. The color gets fullscreened, and on tapping empty space, the menu dissapears, and can reappear with one tap.",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/Colorizer Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "Video Editing App",
-    "fullDescription": "A video editing platform, could use some work but its a good base to start on. It is bare bones, maybe I'll revisit this in the future and improve it. This concept shows basic video editing elements with clips, text, and transitions.",
-    "date": {
-      "start": null,
-      "end": "06.05.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/6.5.24.png",
-      "aspectRatio": "1:1"
-    }
-  },
-  {
-    "name": "NewGenUI",
-    "compactDescription": "",
-    "fullDescription": "",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/NewGenUI Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1"
-    }
-  },
-  {
     "name": "FaceMe",
     "compactDescription": "A PWA to talk to friends, face to face.",
-    "fullDescription": "",
+    "fullDescription": "FaceMe is a PWA that allows you to video call friends and family. With a simple backend, just connecting two people via their adresses, allowing them to call and connect directly without any middleman to transfer data. FaceMe allows you to start a call with a custom username, and room ID (numbers and/or letters), and make a room. The other person puts in the same room ID, and joins. You get choose your camera, mute your microphone.",
     "date": {
-      "start": "5.30.26",
+      "start": "05.30.26",
       "end": null
     },
     "primaryImage": {
@@ -90,14 +194,27 @@
   },
   {
     "name": null,
-    "compactDescription": "TTG Technologies Website Redesign",
-    "fullDescription": "While not the best, I'd say this is a good improvement on the current site that https://www.ttgmi.com/index.htm currently has, would love to see a redesign! This concept includes a floating navigation bar, and a contact sidebar.",
+    "compactDescription": "Starting to build my portfolio.",
+    "fullDescription": "Decided to start building my portfolio, creating a mockup every day to the best of my ability. This mockup is a simple login page for a banking app, some glassmorphism, with a clean minimal UI.",
     "date": {
       "start": null,
-      "end": "05.31.24"
+      "end": "05.30.24"
     },
     "primaryImage": {
-      "src": "Portfolio/5.31.24.png",
+      "src": "Portfolio/5.30.24.png",
+      "aspectRatio": "1:1"
+    }
+  },
+  {
+    "name": "NewGenUI",
+    "compactDescription": "A test playground for the New Generation of UI's",
+    "fullDescription": "Apple has released iOS26, and Samsung has released One UI 8.0. I noticed similar elements, with pill shaped bottom navigation bars, and more circular interactive buttons and elements. I decided to dive deeper into the design and make a web based responsive version of the same thing.\nThis would lead to me making MNMLUI, a universal web version of this design.",
+    "date": {
+      "start": "11.21.25",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/NewGenUI Github Repo Image 3.19.26.png",
       "aspectRatio": "2:1"
     }
   },
@@ -126,11 +243,24 @@
     ]
   },
   {
+    "name": "MultiPlay",
+    "compactDescription": "A Universal Music Player.",
+    "fullDescription": "MultiPlay is a conceptual univeral music player connecting Spotify, Apple Music, Youtube Music, Soundcloud, etc. Into one app. The design features a clean layout and accessible buttons for navigation between songs, and the queue.",
+    "date": {
+      "start": "04.06.26",
+      "end": "07.19.26"
+    },
+    "primaryImage": {
+      "src": "Portfolio/MultiPlay Image 7.19.26.png",
+      "aspectRatio": "2:2"
+    }
+  },
+  {
     "name": "FrameSeeker",
     "compactDescription": "A PWA to view and save frames of a video.",
     "fullDescription": "FrameSeeker is a site that allows you to save a full quality image of a specific frame in a given video. This was actually made to help me get clean and uninterrupted images from Apple events and keynotes at precise timestamps.\nThe PWA allows you to upload a video (even using share targets on mobile or desktop) and capture a full quality image at a given frame. You are able to set the framerate of the video, jump to a certain frame (based on the framerate), set playback speed to 0.5x, 1x, 2x, and 4x, as well as full screen the video, or fit the video to show the ambient adaptive background. On newer devices and on desktop, you can also set the save folder to save all your images to a given location locally, so the images don't all end up in your downloads folder. There are a handful of utility buttons to skip 15 seconds, 1 second, and go one frame at a time forwards and backwards.",
     "date": {
-      "start": null,
+      "start": "09.14.25",
       "end": null
     },
     "primaryImage": {
@@ -139,133 +269,29 @@
     }
   },
   {
-    "name": "UniCalc",
-    "compactDescription": "",
-    "fullDescription": "",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/UniCalc Image 3.23.26.png",
-      "aspectRatio": "2:2"
-    }
-  },
-  {
-    "name": "Imagiline",
-    "compactDescription": "",
-    "fullDescription": "",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/Imagiline Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "",
-    "fullDescription": "",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/Nintendo Switch 2 type 3.png",
-      "aspectRatio": "1:1"
-    }
-  },
-  {
-    "name": "StandBy",
-    "compactDescription": "",
-    "fullDescription": "",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/StandBy Github Repo Image 3.19.26.png",
-      "aspectRatio": "2:1"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "",
-    "fullDescription": "",
-    "date": {
-      "start": null,
-      "end": null
-    },
-    "primaryImage": {
-      "src": "Portfolio/Camera Settings 3.29.26.png",
-      "aspectRatio": "1:1"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "Dynamic Button",
-    "fullDescription": "Another idea for a Dynamic Island alternative, having a button in an app transform to display data or any information that might be useful!",
-    "date": {
-      "start": null,
-      "end": "06.02.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/6.2.24.png",
-      "aspectRatio": "2:1"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "Dynamic Lock Screen Button",
-    "fullDescription": "Yesterday was my graduation, tomorrow is my birthday, and today I had time to make another mockup!\nThis time, in honor of (supposedly) a collaboration between OpenAI and Apple at the WWDC event (June 13th), I've made a concept of a home screen button being changed into a GPT Launcher!\n(also I had to use the 15 pro and not pro max because that's the only native lockscreen mockup Apple has on figma)",
-    "date": {
-      "start": null,
-      "end": "06.07.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/6.7.24.png",
-      "aspectRatio": "2:2"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "ChatGPT Dynamic Island",
-    "fullDescription": "Well, the event is tomorrow! Based on what gets announced, I'll make a concept UI, or replicate one from the event. For now, this is the final idea I had for this. \n\nAlso yes, I did have a fun birthday.",
-    "date": {
-      "start": null,
-      "end": "06.09.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/6.9.24.png",
-      "aspectRatio": "2:1"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "Starting to build my portfolio.",
-    "fullDescription": "Decided to start building my portfolio, creating a mockup every day to the best of my ability. This mockup is a simple login page for a banking app, some glassmorphism, with a clean minimal UI.",
-    "date": {
-      "start": null,
-      "end": "05.30.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/5.30.24.png",
-      "aspectRatio": "1:1"
-    }
-  },
-  {
     "name": "Songify",
-    "compactDescription": "",
-    "fullDescription": "",
+    "compactDescription": "A Tinder for Song Searching",
+    "fullDescription": "In collaboration with Frank Richter, Muhammad Harrie, and Naeem Mohaidheen, in our Sophmore Project class at the end of 2025, we have designed and developed a swipe based, song searching and filtering algorithm that allows a user to find songs based on what they like and dislike, and even favorite/super like songs that they love most. With the ability to see songs that the user has liked, and allowing them to catagorize searches and libraries, this song finding algorithm enables easier search of songs without needing to hassle through forums and verbal reccomendations. \n Frontend design and development was directed by myself, and researched and developed by all of us.",
     "date": {
-      "start": null,
+      "start": "10.23.25",
       "end": null
     },
     "primaryImage": {
       "src": "Portfolio/Songify Image 3.23.26.png",
       "aspectRatio": "2:2"
+    }
+  },
+  {
+    "name": "TimeBreak",
+    "compactDescription": "A PWA to see what time to take a break.",
+    "fullDescription": "TimeBreak is a site that allows you to see what time to take a break based on your work schedule. It is a simple PWA that allows you to input your shift start and end, and break length and get a suggested break time. You can also save times and load them for quick access. Also, you can view the length of your shift.",
+    "date": {
+      "start": "10.26.25",
+      "end": null
+    },
+    "primaryImage": {
+      "src": "Portfolio/TimeBreak Image 3.23.26.png",
+      "aspectRatio": "1:2"
     }
   },
   {
@@ -282,41 +308,15 @@
     }
   },
   {
-    "name": "MultiPlay",
-    "compactDescription": "A Universal Music Player.",
-    "fullDescription": "",
+    "name": "Colorizer",
+    "compactDescription": "A PWA to fullscreen any color you want.",
+    "fullDescription": "Colorizer is a site that allows you to show any color across the entirety of your screen. I wanted to have an underglow lighting on a model iPhone 16, but I did not have a colored lightbox, so I made this app to use my s11 ultra tablet as a underglow for the device.\nThis PWA allows you to choose a color either in hex, hsl, hsv, or rgb, and save colors for later use. The color gets fullscreened, and on tapping empty space, the menu dissapears, and can reappear with one tap.",
     "date": {
-      "start": null,
-      "end": "7.19.26"
-    },
-    "primaryImage": {
-      "src": "Portfolio/MultiPlay Image 7.19.26.png",
-      "aspectRatio": "2:2"
-    }
-  },
-  {
-    "name": "TimeBreak",
-    "compactDescription": "A PWA to see what time to take a break.",
-    "fullDescription": "",
-    "date": {
-      "start": null,
+      "start": "09.07.25",
       "end": null
     },
     "primaryImage": {
-      "src": "Portfolio/TimeBreak Image 3.23.26.png",
-      "aspectRatio": "1:2"
-    }
-  },
-  {
-    "name": null,
-    "compactDescription": "Minimal Video Player",
-    "fullDescription": "Making the video player more minimal, less obtrusive when it pops up! Although this design should have a 3 dot menu button, I decided to not include it for now.",
-    "date": {
-      "start": null,
-      "end": "06.13.24"
-    },
-    "primaryImage": {
-      "src": "Portfolio/6.13.24.png",
+      "src": "Portfolio/Colorizer Github Repo Image 3.19.26.png",
       "aspectRatio": "2:1"
     }
   }
